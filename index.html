@@ -1,0 +1,851 @@
+<!doctype html>
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Micro Code</title>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+
+        <!-- navbar -->
+        <nav class="navbar sticky-top navbar-light navbar-expand-lg bg-white shadow">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span>Code</span><span class="text-white">Micro</span> <i class="bi bi-boxes"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mx-5 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" data-lang="home" href="#particles-js">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-lang="about">من نحن؟ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" data-lang="skills">المهارات </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services" data-lang="services">الخدمات </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio" data-lang="portfolio">معرض الأعمال </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials" data-lang="testimonials">قالوا عنا </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog" data-lang="blog">المدونة </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-lang="contact">اتصل بنا </a>
+                        </li>
+                    </ul>
+                    <select class="form-control mx-2" style="width: 80px;">
+                        <option value="ar" selected data-lang="arabic">Arabic</option>
+                        <option value="en" data-lang="english">English</option>
+                    </select>
+                    <!-- login Button trigger modal -->
+                    <button data-lang="login" type="button" class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    الدخول
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- login modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 data-lang="login" class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row mb-3">
+                                <label data-lang="email" for="inputEmail3" class="col-sm-4 col-form-label">البريد الالكتروني</label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control" id="inputEmail3">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label data-lang="password" for="inputPassword3" class="col-sm-4 col-form-label">كلمة المرور</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-lang="close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                        <button data-lang="login" type="button" class="btn btn-primary">تسجيل</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /navbar -->
+
+        <!-- hero -->
+        <section class="hero vh-100 d-flex align-items-center" id="particles-js">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 mx-auto text-center content">
+                        <h1 class="display-4 text-white" data-lang="heroh1">أنشئ <span class="text-primary">موقعك</span> الآن</h1>
+                        <p class="text-white my-4" data-lang="herop">
+                                    نعمل على تقديم خدمة تصميم و برمجة المواقع بأسلوب فريد و سهل الوصول لجميع العملاء المحتملين ، نبني موقعك بكل التفاصيل التي تحتاجها و نجعل منه صرحاً زاخراً بهويتك
+                                    </p>
+                        <button class="btn me-2 btn-primary" data-lang="herobtn1">أنشئ موقعك</button>
+                        <button class="btn btn-outline-light" data-lang="herobtn2">اتصل الآن</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /hero -->
+
+        <!-- about -->
+        <section class="about row w-100" id="about">
+                <div class="col-lg-6 about-img"></div>
+                <div class="col-lg-6 py-5">
+                    <div class="container">
+                        <div class="row about-info shadow p-4">
+                            <div class="col-md-10 offset-md-1">
+                                <h6 class="text-primary" data-lang="abouth6">نبذة بسيطة عنا</h6>
+                                <h2 data-lang="abouth2">من نحن؟</h2>
+                                <p class="mb-5" data-lang="aboutp">
+                                    نعمل على تقديم خدمة تصميم و برمجة المواقع بأسلوب فريد و سهل الوصول لجميع العملاء المحتملين ، نبني موقعك بكل التفاصيل التي تحتاجها و نجعل منه صرحاً زاخراً بهويتك
+                                    </p>
+                                <div class="about-card d-flex">
+                                    <div class="icon-box me-3">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h5 data-lang="email">البريد الالكتروني</h5>
+                                        <p>mehranemen@gmail.com </p>
+                                    </div>
+                                </div>
+                                <div class="about-card d-flex">
+                                    <div class="icon-box me-3">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h5 data-lang="phone">الهاتف</h5>
+                                        <p>+213 781 411 509</p>
+                                    </div>
+                                </div>
+                                <div class="about-card d-flex">
+                                    <div class="icon-box me-3">
+                                        <i class="fa fa-map"></i>
+                                    </div>
+                                    <div>
+                                        <h5 data-lang="address">العنوان</h5>
+                                        <p data-lang="aboutaddress">اشبيليا القديمة، المسيلة - الجزائر.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- /about -->
+
+        <!-- skills -->
+        <section class="skills bg-light" id="skills">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 data-lang="skillsh6" class="text-primary">المهارات و التقنيات التي نستخدمها</h6>
+                        <h2 data-lang="skillsh2">المهارات</h2>
+                        <p data-lang="skillsp">
+                                    نعمل على تقديم خدمة تصميم و برمجة المواقع بأسلوب فريد و سهل الوصول لجميع العملاء المحتملين ، نبني موقعك بكل التفاصيل التي تحتاجها و نجعل منه صرحاً زاخراً بهويتك
+                                    </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 data-lang="design" class="text-primary m-4">التصميم</h4>
+                        <div class="accordion shadow" id="accordionExample1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                        HTML 
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne1" data-bs-parent="#accordionExample1">
+                                    <div class="accordion-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">HTML</h5>
+                                                <p class="card-text" data-lang="html">لغة ترميز تستخدم في إنشاء وتصميم صفحات ومواقع الويب</p>
+                                                <div class="progress">
+                                                    <h3 class="progress-title text-primary">HTML</h3>
+                                                    <div class="progress-bar">
+                                                        <div class="progress-value" style="width: 85%;">85%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                        CSS 
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample1">
+                                    <div class="accordion-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS</h5>
+                                                <p class="card-text" data-lang="css">لغة تنسيق لصفحات الويب تهتم بشكل وتصميم المواقع</p>
+                                                <div class="progress">
+                                                    <h3 class="progress-title text-primary">CSS</h3>
+                                                    <div class="progress-bar">
+                                                        <div class="progress-value" style="width: 80%;">80%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                                        JAVASCRIPT 
+                                    </button>
+                                </h2>
+                                <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample1">
+                                    <div class="accordion-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">JAVASCRIPT</h5>
+                                                <p class="card-text" data-lang="js">لغة برمجة عالية المستوى تستخدم أساساً في متصفحات الويب لإنشاء صفحات أكثر تفاعلية</p>
+                                                <div class="progress">
+                                                    <h3 class="progress-title text-primary">JAVASCRIPT</h3>
+                                                    <div class="progress-bar">
+                                                        <div class="progress-value" style="width: 70%;">70%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                                        BOOTSTRAP 
+                                    </button>
+                                </h2>
+                                <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree4" data-bs-parent="#accordionExample1">
+                                    <div class="accordion-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">BOOTSTRAP</h5>
+                                                <p class="card-text" data-lang="bootstrap"> إطار عمل مفتوح المصدر يُساعد على تصميم مواقع الويب وتطبيقاته</p>
+                                                <div class="progress">
+                                                    <h3 class="progress-title text-primary">BOOTSTRAP</h3>
+                                                    <div class="progress-bar">
+                                                        <div class="progress-value" style="width: 80%;">80%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 data-lang="development" class="text-primary m-4">التطوير</h4>
+                        <div class="accordion shadow" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        PHP
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">PHP</h5>
+                                                <p class="card-text" data-lang="php">  لغة برمجة نصية صممت أساسًا من أجل استخدامها لتطوير وبرمجة تطبيقات الويب </p>
+                                                <div class="progress">
+                                                    <h3 class="progress-title text-primary">PHP</h3>
+                                                    <div class="progress-bar">
+                                                        <div class="progress-value" style="width: 70%;">70%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        MYSQL
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">MYSQL</h5>
+                                                <p class="card-text" data-lang="mysql">  نظام إدارة قواعد البيانات علائقي يعتمد التعامل معه على لغة إس كيو إل </p>
+                                                <div class="progress">
+                                                    <h3 class="progress-title text-primary">MYSQL</h3>
+                                                    <div class="progress-bar">
+                                                        <div class="progress-value" style="width: 70%;">70%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        LARAVEL
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">LARAVEL</h5>
+                                                <p class="card-text" data-lang="laravel">إطار عمل لتطبيقات الويب مفتوح المصدر بلغة PHP.</p>
+                                                <div class="progress">
+                                                    <h3 class="progress-title text-primary">LARAVEL</h3>
+                                                    <div class="progress-bar">
+                                                        <div class="progress-value" style="width: 70%;">70%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        WORDPRESS
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">WORDPRESS</h5>
+                                                <p class="card-text" data-lang="wordpress">نظام إدارة محتوى إلكتروني مفتوح المصدر، مبنيّ بلغة بي إتش بي وقواعد بيانات ماي إس كيو إل</p>
+                                                <div class="progress">
+                                                    <h3 class="progress-title text-primary">WORDPRESS</h3>
+                                                    <div class="progress-bar">
+                                                        <div class="progress-value" style="width: 70%;">70%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /skills -->
+
+        <!-- services -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 data-lang="servicesh6" class="text-primary">ماذ نقدم في موقعنا؟</h6>
+                        <h2 data-lang="servicesh2">الخدمات</h2>
+                        <p data-lang="servicesp">
+                                    نعمل على تقديم خدمة تصميم و برمجة المواقع بأسلوب فريد و سهل الوصول لجميع العملاء المحتملين ، نبني موقعك بكل التفاصيل التي تحتاجها و نجعل منه صرحاً زاخراً بهويتك
+                                    </p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="icon-box">
+                                <i class="fa fa-edit"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3" data-lang="designh6">تصميم المواقع</h5>
+                            <p data-lang="designp">احصل على تصميم جذاب وأنيق لموقعك الالكتروني ، يساعدك على جلب المزيد من الزوار ويعطي انطباع مميز لعملائك</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="icon-box">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3" data-lang="developmenth6">تطوير المواقع</h5>
+                            <p data-lang="developmentp">نقوم بتطوير مواقع ديناميكية تلبي احتياجات الشركات كما نقوم بتحسين أداء أنشطة الشركات وتقديم حلول مبتكرة وفعالة.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="icon-box">
+                                <i class="fa fa-wordpress"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3" data-lang="wordpressh6"> الووردبرس</h5>
+                            <p data-lang="wordpressp">تصميم وتطوير المواقع باستخدام ووردبرس عبر الإنترنت.100 ٪ مواقع ذاتية الإدارة. نظام إدارة متكامل.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /services -->
+        
+        <!-- portfolio -->
+        <section class="portfolio bg-light" id="portfolio">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 class="text-primary" data-lang="portfolioh6">استعراض لبعض الأعمال التي قمنا بها</h6>
+                        <h2 data-lang="portfolioh2">معرض الأعمال</h2>
+                        <p data-lang="portfoliop">
+                                    نعمل على تقديم خدمة تصميم و برمجة المواقع بأسلوب فريد و سهل الوصول لجميع العملاء المحتملين ، نبني موقعك بكل التفاصيل التي تحتاجها و نجعل منه صرحاً زاخراً بهويتك
+                                    </p>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="project">
+                            <img src="img/project-1.png" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 data-lang="project1" class=" text-white">مشروع رقم 01</h4>
+                                    <h6 data-lang="design" class=" text-white">تصميم</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="project">
+                            <img src="img/project-2.png" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 data-lang="project2" class=" text-white">مشروع رقم 02</h4>
+                                    <h6 data-lang="design" class=" text-white">تصميم</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="project">
+                            <img src="img/project-3.png" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 data-lang="project3" class=" text-white">مشروع رقم 03</h4>
+                                    <h6 data-lang="design" class=" text-white">تصميم</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="project">
+                            <img src="img/project-4.png" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 data-lang="project4" class=" text-white">مشروع رقم 04</h4>
+                                    <h6 data-lang="design" class=" text-white">تصميم</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="project">
+                            <img src="img/project-7.png" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 data-lang="project7" class=" text-white">مشروع رقم 07</h4>
+                                    <h6 data-lang="design" class=" text-white">تصميم</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="project">
+                            <img src="img/project-5.png" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 data-lang="project5" class=" text-white">مشروع رقم 05</h4>
+                                    <h6 data-lang="design" class=" text-white">تصميم</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="project">
+                            <img src="img/project-6.png" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 data-lang="project6" class=" text-white">مشروع رقم 06</h4>
+                                    <h6 data-lang="design" class=" text-white">تصميم</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="project">
+                            <img src="img/project-8.png" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 data-lang="project8" class=" text-white">مشروع رقم 08</h4>
+                                    <h6 data-lang="design" class=" text-white">تصميم</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /portfolio -->
+        
+        <!-- pricing -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 data-lang="priceh6" class="text-primary">أسعار خدماتنا المميزة</h6>
+                        <h2 data-lang="priceh2">الأسعار</h2>
+                        <p data-lang="pricep">
+                                    نعمل على تقديم خدمة تصميم و برمجة المواقع بأسلوب فريد و سهل الوصول لجميع العملاء المحتملين ، نبني موقعك بكل التفاصيل التي تحتاجها و نجعل منه صرحاً زاخراً بهويتك
+                                    </p>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="price-card">
+                            <h4 data-lang="portfolio" class="text-center mb-3">معرص أعمال [بوتستراب]</h4>
+                            <h1 class="price-box">10$</h1>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h6 data-lang="skills" class="ms-3">التقنيات المستخدمة</h6>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> HTML
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> CSS
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> JAVASCRIPT
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> BOOTSTRAP
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> PARTICLES JS
+                                </li>
+                            </ul>
+                            <hr>
+                            <button data-lang="buy" class="btn btn-primary">اشتر الآن</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="price-card">
+                            <h4 data-lang="portfolio" class="text-center mb-3">معرص أعمال [رياكت]</h4>
+                            <h1 class="price-box">10$</h1>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h6 data-lang="skills" class="ms-3">التقنيات المستخدمة</h6>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> HTML
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> CSS
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> JAVASCRIPT
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> BOOTSTRAP
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> PARTICLES JS
+                                </li>
+                            </ul>
+                            <hr>
+                            <button data-lang="buy" class="btn btn-primary">اشتر الآن</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="price-card">
+                            <h4 data-lang="landing" class="text-center mb-3"> صفحة هبوط [رياكت]</h4>
+                            <h1 class="price-box">10$</h1>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h6 data-lang="skills" class="ms-3">التقنيات المستخدمة</h6>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> HTML
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> CSS
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> JAVASCRIPT
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> BOOTSTRAP
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> PARTICLES JS
+                                </li>
+                            </ul>
+                            <hr>
+                            <button data-lang="buy" data-lang="skills" class="btn btn-primary">اشتر الآن</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="price-card">
+                            <h4 data-lang="ecommerce" class="text-center mb-3"> متجر الكتروني [ووردبرس]</h4>
+                            <h1 class="price-box">10$</h1>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h6 data-lang="skills" class="ms-3">التقنيات المستخدمة</h6>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> HTML
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> CSS
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> JAVASCRIPT
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> BOOTSTRAP
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2"></i> PARTICLES JS
+                                </li>
+                            </ul>
+                            <hr>
+                            <button data-lang="buy" class="btn btn-primary">اشتر الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /pricing -->
+        
+        <!-- testimonials -->
+        <section class="testimonials bg-light" id="testimonials">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 data-lang="testimonialsh6" class="text-primary">بعض آراء زبائننا</h6>
+                        <h2 data-lang="testimonialsh2">قالوا عنا</h2>
+                        <p data-lang="testimonialsp">
+                                    نعمل على تقديم خدمة تصميم و برمجة المواقع بأسلوب فريد و سهل الوصول لجميع العملاء المحتملين ، نبني موقعك بكل التفاصيل التي تحتاجها و نجعل منه صرحاً زاخراً بهويتك
+                                    </p>
+                    </div>
+                </div>
+                <div class="row g-3 text-center">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="test-box price-card">
+                            <img src="img/test.png" alt="">
+                            <h5 data-lang="someone" class="mt-3">فلان بن فلان</h5>
+                            <p data-lang="job">مصمم مواقع</p>
+                            <div class="socials">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="test-box price-card">
+                            <img src="img/test.png" alt="">
+                            <h5 data-lang="someone" class="mt-3">فلان بن فلان</h5>
+                            <p data-lang="job">مصمم مواقع</p>
+                            <div class="socials">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="test-box price-card">
+                            <img src="img/test.png" alt="">
+                            <h5 data-lang="someone" class="mt-3">فلان بن فلان</h5>
+                            <p data-lang="job">مصمم مواقع</p>
+                            <div class="socials">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="test-box price-card">
+                            <img src="img/test.png" alt="">
+                            <h5 data-lang="someone" class="mt-3">فلان بن فلان</h5>
+                            <p data-lang="job">مصمم مواقع</p>
+                            <div class="socials">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /testimonials -->
+        
+        <!-- blog -->
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 data-lang="blogh6" class="text-primary">تابع مقالاتنا اليومية حول جديد البرمجة</h6>
+                        <h2 data-lang="blogh2">المدونة</h2>
+                        <p data-lang="blogp">
+                                    نعمل على تقديم خدمة تصميم و برمجة المواقع بأسلوب فريد و سهل الوصول لجميع العملاء المحتملين ، نبني موقعك بكل التفاصيل التي تحتاجها و نجعل منه صرحاً زاخراً بهويتك
+                                    </p>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="post price-card">
+                            <img src="img/post-1.jpg" alt="">
+                            <hr>
+                            <h5 data-lang="title"><a href="">عنوان المقالة</a></h5>
+                            <p data-lang="blogp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam natus perspiciatis molestias sit, debitis dolor.</p>
+                            <button data-lang="more" class="btn btn-outline-primary">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post price-card">
+                            <img src="img/post-2.jpg" alt="">
+                            <hr>
+                            <h5 data-lang="title"><a href="">عنوان المقالة</a></h5>
+                            <p data-lang="blogp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam natus perspiciatis molestias sit, debitis dolor.</p>
+                            <button data-lang="more" class="btn btn-outline-primary">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post price-card">
+                            <img src="img/post-3.jpg" alt="">
+                            <hr>
+                            <h5 data-lang="title"><a href="">عنوان المقالة</a></h5>
+                            <p data-lang="blogp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam natus perspiciatis molestias sit, debitis dolor.</p>
+                            <button data-lang="more" class="btn btn-outline-primary">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /blog -->
+        
+        <!-- contact -->
+        <section class="contact bg-light" id="contact">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 data-lang="contacth6" class="text-primary">لأي استفسار أو خدمة لا تتردد في الاتصال</h6>
+                        <h2 data-lang="contacth2">اتصل بنا</h2>
+                        <p data-lang="contactp">
+                                    نعمل على تقديم خدمة تصميم و برمجة المواقع بأسلوب فريد و سهل الوصول لجميع العملاء المحتملين ، نبني موقعك بكل التفاصيل التي تحتاجها و نجعل منه صرحاً زاخراً بهويتك
+                                    </p>
+                    </div>
+                </div>
+                <form action="" class="row g-3 justify-content-center shadow bg-white p-5">
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="الإسم الكامل">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="البريد الالكتروني">
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="الموضوع">
+                    </div>
+                    <div class="col-md-10">
+                        <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="الرسالة"></textarea>
+                    </div>
+                    <div class="col-md-10 d-grid">
+                        <button data-lang="submit"  class="btn btn-primary">إرسال</input>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- /contact -->
+
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div dir="ltr" class="col-md-4 footer-logo">
+                            <i class="bi bi-boxes mx-2"></i><span class="text-white">Micro</span><span class="text-primary">Code</span>
+                        </div>
+                        <div class="col-md-2">
+                            <h5>روابط مهمة</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-angle-left mx-2"></i><a href="#"><span data-lang="home">الرئيسية</span></a></li>
+                                <li><i class="fa fa-angle-left mx-2"></i><a href="#"><span data-lang="about">من نحن</span></a></li>
+                                <li><i class="fa fa-angle-left mx-2"></i><a href="#"><span data-lang="services">الخدمات</span></a></li>
+                                <li><i class="fa fa-angle-left mx-2"></i><a href="#"><span data-lang="skills">المهارات</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <h5>روابط أخرى</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-angle-left mx-2"></i><a href="#"><span data-lang="portfolio">معرض الأعمال</span></a></li>
+                                <li><i class="fa fa-angle-left mx-2"></i><a href="#"><span data-lang="testimonials">قالوا عنا</span></a></li>
+                                <li><i class="fa fa-angle-left mx-2"></i><a href="#"><span data-lang="prices">الأسعار</span><span data-lang="home">الأسعار</span></a></li>
+                                <li><i class="fa fa-angle-left mx-2"></i><a href="#"><span data-lang="blog">المدونة</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>معلومات الإتصال</h5>
+                            <ul class="list-unstyled">
+                                <li class="text-light"><i class="fa fa-envelope mx-2"></i> <span class="text-warning" data-lang="email">البريد الالكتروني</span> : mehranemen@gmail.com</li>
+                                <li class="text-light"><i class="fa fa-phone mx-2"></i> <span class="text-warning" data-lang="phone">الهاتف</span>  : +213 781 411 509</li>
+                                <li class="text-light"><i class="fa fa-map mx-2"></i> <span class="text-warning" data-lang="address">العنوان</span> : إشبيليا القديمة، المسيلة، الجزائر.</li>
+                                <li class="text-light"><i class="fa fa-link mx-2"></i> <span class="text-warning" data-lang="group">مجموعتنا</span> : <a href="https://mehranesoft.com">mehranesoft</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copy py-3 text-center text-white" dir="ltr">
+            Designed By Mehrane &copy; Copy Right Riserved By <i class="bi bi-boxes"></i> MicroCode
+        </div>
+        <!-- /footer -->
+
+        <!-- js links -->
+        <script src="js/script.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
