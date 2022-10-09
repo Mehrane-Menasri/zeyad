@@ -31,7 +31,7 @@
     border-radius: 0!important;
     border-width: 2px!important;
     padding-left: 18px!important;
-    padding-right: 18px!important;
+    padding-left: 18px!important;
     transition: all .3s linear;
 }
 .btn:hover {
@@ -59,9 +59,8 @@
 body {
     overflow-x: hidden!important;
     font-family: "cairo"!important;
-    /* direction: rtl;
-    text-align: right; */
     line-height: 1.7;
+    direction: ltr;
     color: var(--body);
 }
 h1, h2, h3, h4, h5, h6, .display-4 {
@@ -95,7 +94,7 @@ img {
 }
 .navbar .navbar-brand .bi {
     font-size: 35px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 .navbar .nav-link:hover {
     color: white!important;
@@ -119,7 +118,7 @@ img {
     width: 0%;
     height: 100%;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: var(--primary)!important;
     transition: all linear .3s;
     z-index: -1;
@@ -167,7 +166,7 @@ img {
 /* /hero */
 /* about */
 /* .about-info {
-    margin-right: -80px!important;
+    margin-left: -80px!important;
     z-index: 5;
     background: #fff;
 } */
@@ -202,7 +201,7 @@ img {
     height: 100%;
     background-color: white;
     border-radius: 10px 0 0 10px;
-    float: right;
+    float: left;
     margin: 0;
     font-size: 15px;
     color: black;
@@ -212,7 +211,7 @@ img {
 }
 .progress .progress-title::after {
     content: '';
-    border-right: 10px solid #fff;
+    border-left: 10px solid #fff;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     position: absolute;
@@ -346,7 +345,7 @@ img {
 }
 .price-box {
     margin-left: auto;
-    margin-right: auto;
+    margin-left: auto;
     width: 85px;
     height: 55px;
     display: flex;
@@ -441,7 +440,7 @@ footer ul li {
     transition: all linear .3s;
 }
 footer ul li:hover {
-    margin-right: 15px;
+    margin-left: 15px;
 }
 footer ul li i {
     color: white;
